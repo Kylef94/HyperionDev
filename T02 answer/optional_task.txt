@@ -1,0 +1,16 @@
+fibonacci task - 
+
+request user input a positive whole number, store as var n
+
+create var first_operand, set to 0
+create var second_operand, set to 1
+
+print first_operand
+print second_operand
+
+for i in range(n-2)
+	add first_operand and second_operand, store answer as var result
+	print result
+	set first_operand to equal second_operand
+	set second_operand to equal result
+	

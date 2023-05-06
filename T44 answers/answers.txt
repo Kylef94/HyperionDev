@@ -1,0 +1,15 @@
+1) a) data refers to a single entry in the table and is a single piece of data held in a record for a specific field
+b) field refers to a column of the table in the database, and is a type of information held in that database e.g. age or date of birth
+c) record refers to a row in the table, where the row constitutes a complete record in the database, so if the database stored receipts a record would contain all the relevant information for a specific receipt
+d) file refers to the entire table, including all fields and records
+
+2) a DBMS or Databse management system, is a specialised system designed to run and manage relational databases,
+they provide various benefits including transactions which can be rolled back, improved user management and ability to give different access rights to specific users
+
+3) data refers raw measurements or facts that have been provided, information is actionable insight which can be extracted from data
+
+4) metadata is data contained in a file which is not related the the file contents themselves, but rather is data hidden to either help the computer display the file or to store specific tangential information
+e.g. images have a metadata tag for last changed, which can tell you if any edits have been made
+
+5) e) 4
+f) 5

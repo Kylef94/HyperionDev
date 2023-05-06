@@ -1,0 +1,35 @@
+User: admin
+Total user tasks: 1
+% of tasks assigned to user: 25.0%
+% user tasks completed: 100.0%
+% user tasks to complete: 0.0%
+% user tasks overdue: 0.0%
+
+User: kyle
+Total user tasks: 3
+% of tasks assigned to user: 75.0%
+% user tasks completed: 0.0%
+% user tasks to complete: 100.0%
+% user tasks overdue: 0.0%
+
+User: jai
+Total user tasks: 0
+% of tasks assigned to user: 0%
+% user tasks completed: 0%
+% user tasks to complete: 0%
+% user tasks overdue: 0%
+
+User: ilske
+Total user tasks: 0
+% of tasks assigned to user: 0%
+% user tasks completed: 0%
+% user tasks to complete: 0%
+% user tasks overdue: 0%
+
+User: andrew
+Total user tasks: 0
+% of tasks assigned to user: 0%
+% user tasks completed: 0%
+% user tasks to complete: 0%
+% user tasks overdue: 0%
+

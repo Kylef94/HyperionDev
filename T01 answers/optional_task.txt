@@ -1,0 +1,16 @@
+Optional Task -
+
+creat num_list to store user inputs
+
+for in range (4)
+	ask user to input a number
+	add input to num_list
+
+sort num_list from smallest to largest
+print(num_list)
+
+
+*or you can print each number individually:
+
+for num in num_list
+	print num

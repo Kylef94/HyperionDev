@@ -1,0 +1,51 @@
+T01
+
+Scenario 1 - 
+
+create list answer_list to store user answers
+
+while user_inputis not 0
+
+	ask user to input a positive number
+	
+	check input is valid(i.e not a letter or non numeric character), if invalid give the user an error
+	
+	if user_input = 0
+		sort the answers in answer_list from biggest to smallest
+		print the biggest number from answer_list (should be top entry or index 0 if sorted in descending order)
+	
+	else
+		add user_input to answer_list
+		
+
+********************
+
+Scenario 2 -
+
+Load integers from file or take as user input
+if stored in file then may read as string, if so convert numbers to int and add to a list
+sum the integers in the list and divide by the length of the list (i.e sum(int_list) / len(int_list))
+print result
+
+********************
+
+Scenario 3 -
+
+load grocery_list from file or from user input
+check if grocery list indicates what has already been bought, and remove any already bought groceries if necessary
+sort grocery_list in alphabetical order
+
+for entry in grocery_list
+	print entry
+
+
+********************
+Scenario 4 -
+
+read variables x and y
+
+calculate var S as X + Y
+calculate var A as S / 2
+calculate var p as x * y
+
+print s, a, p

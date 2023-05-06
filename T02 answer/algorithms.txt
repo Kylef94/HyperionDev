@@ -1,0 +1,23 @@
+T02
+
+Scenario 1 -
+
+request name from user, store as var first_name
+print first_name
+print "Hello, World"
+
+
+
+Scenario 2 -
+
+request age from user, store as var age
+
+if age >= 18
+	print "You're old enough"
+	
+if 16 <= age < 18:
+	print "Almost there"
+
+if age < 16
+	print "You're too young"
+

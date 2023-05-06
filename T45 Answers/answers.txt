@@ -1,0 +1,58 @@
+1) What is normalizaton
+
+Normalization is the process of evaluating table sturctures in a database to minimize redundancies and
+therefore improve performance and avoid data anomalies.
+
+
+
+2) When is a table in 1NF?
+
+A table is said to be in 1NF if all iof its key attributes are clearly defined, none of the groups in the table repeat,
+and any attributes are dependent on the tables primary key
+
+
+
+3) When is a table in 2NF?
+
+A table is in 2NF when it meets the requirements for 1NF, and does not include any partial dependencies(i.e attributed dependent on only part of the primary key)
+
+
+
+4) When is a table in 3NF?
+
+When a table meets the requirements for 2NF, while also not containing any transitive dependencies.
+
+
+
+5) draw dependency diagram for INVOICE table
+
+INV_NUM, PROD_NUM -> SALE_DATE, QUANT_SOLD, PROD_LABEL, PROD_PRICE, VEND_CODE, VEND_NAME
+
+
+INV_NUM -> SALE_DATE, QUANT_SOLD, VEND_CODE, VEND_NAME
+
+PROD_NUM -> PROD_LABEL, PROD_PRICE
+
+VEND_CODE -> VEND_NAME
+
+
+
+5) Remove all partial dependencies, draw the new dep. diagrams, and identify the NF for each table created
+INV_NUM 
+PROD_NUM
+INV_NUM PROD_NUM
+
+INVOICE(INV_NUM, SALE_DATE, VEND_CODE, VEND_NAME) (2NF)
+PRODUCT(PROD_NUM, PROD_LABEL, PROD_PRICE) (3NF)
+SALES(INV_NUM, PROD_NUM, QUANT_SOLD) (3NF)
+
+
+
+
+6) Remove all transitive dependencies, draw the new dep. diagrams, and identify the NF for each table created
+
+
+INVOICE(INV_NUM, SALE_DATE, VEND_CODE) (3NF)
+VENDORS(VEND_CODE, VEND_NAME) (3NF)
+PRODUCT(PROD_NUM, PROD_LABEL, PROD_PRICE) (3NF)
+SALES(INV_NUM, PROD_NUM, QUANT_SOLD) (3NF)

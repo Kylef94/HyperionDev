@@ -1,0 +1,52 @@
+1) create table
+
+CREATE TABLE Student(
+STU_NUM CHAR(6),
+STU_SNAME VARCHAR(15),
+STU_FNAME VARCHAR(15),
+STU_INITIAL CHAR(1),
+STU_STARTDATE DATE,
+COURSE_CODE CHAR(3),
+PROJ_NUM INT(2))
+
+
+2) add rows to table
+
+INSERT INTO Student
+	VALUES ('01', 'Snow', 'John', 'E', '2014-04-01', '201', 06);
+
+INSERT INTO Student
+	VALUES ('02', 'Stark', 'Arya', 'C', '2017-07-12','305', 11);
+
+3) list attributed for course 305
+
+SELECT * FROM Student
+WHERE COURSE_CODE = 305;
+
+4) change course code to 304 for student num 7 
+
+UPDATE Student
+SET COURSE_CODE = 304
+WHERE STU_NUM = "07";
+
+5) delete jaime lannister
+
+DELETE FROM Student
+WHERE STU_SNAME = "Lannister" AND STU_FNAME = 'Jaime' AND STU_STARTDATE = '05-Sep-12' AND COURSE_CODE = '101' AND PROJ_NUM = 2;
+
+6) change proj num to 14 for students who started after 01 jan 16 and course code at least 201
+
+UPDATE Student
+SET PROJ_NUM = 14
+WHERE STU_STARTDATE < '01-Jan-16' AND COURSE_CODE > '201';
+
+
+7) delete all rows from table but keep table
+
+****NOTE: EXAMPLE IN PDF SAYS COMMAND SHOULD BE "DELETE * FROM Student;" BUT THIS IS INCORRECT, see https://www.w3schools.com/sql/sql_delete.asp   ******
+
+DELETE FROM Student;
+
+8) delete student table entirely
+
+DROP TABLE Student;
